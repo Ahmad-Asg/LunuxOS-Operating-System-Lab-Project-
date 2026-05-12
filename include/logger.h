@@ -4,10 +4,8 @@
 #include "lunuxos.h"
 #include <sys/file.h>
 
-/* ══════════════════════════════════════════════
-   Cross-process logging using flock()
-   Works from main OS and from every task process
-   ══════════════════════════════════════════════ */
+/*  Cross-process logging using flock()
+   Works from main OS and from every task process */
 static inline void log_event(const char *level, const char *fmt, ...) {
     FILE *f = fopen(LOG_FILE, "a");
     if (!f) return;
