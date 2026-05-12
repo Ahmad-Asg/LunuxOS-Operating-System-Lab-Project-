@@ -297,7 +297,7 @@ git clone https://github.com/Ahmad-Asg/LunuxOS-Operating-System-Lab-Project-
 ```
 ## Step 3: Move into the Project Directory
 ```bash
-cd LunuxOS
+cd LunuxOS-Operating-System-Lab-Project-
 ```
 ## Step 4: Compile the Project
 ```bash
