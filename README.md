@@ -188,21 +188,65 @@ Produces beep sounds and demonstrates simple audio interaction.
 ---
 
 # 📂 Project Structure
-
 ```bash
 LunuxOS/
 │
 ├── kernel/
+│   └── kernel.c
+│
 ├── scheduler/
+│   └── scheduler.c
+│
 ├── memory/
+│   └── memory.c
+│
 ├── synchronization/
+│   └── sync.c
+│
 ├── deadlock/
+│   └── deadlock.c
+│
 ├── ipc/
+│   └── ipc.c
+│
 ├── filesystem/
+│
 ├── tasks/
+│   ├── task_shell.c
+│   ├── task_notepad.c
+│   ├── task_calculator.c
+│   ├── task_cpu_monitor.c
+│   ├── task_tictactoe.c
+│   ├── task_guessing.c
+│   ├── task_file_copier.c
+│   ├── task_typing.c
+│   ├── task_stopwatch.c
+│   ├── task_beep.c
+│   ├── task_text_editor.c
+│   ├── task_file_mover.c
+│   ├── task_file_deleter.c
+│   ├── task_clock.c
+│   ├── task_minesweeper.c
+│   ├── task_timer.c
+│   ├── task_file_info.c
+│   ├── task_ram_monitor.c
+│   ├── task_calendar.c
+│   └── task_file_creator.c
+│
 ├── include/
+│   ├── lunuxos.h
+│   ├── kernel.h
+│   ├── sync.h
+│   ├── memory.h
+│   ├── ipc.h
+│   ├── task_common.h
+│   ├── logger.h
+│   ├── scheduler.h
+│   └── deadlock.h
+│
 ├── main.c
 ├── Makefile
+├── lunuxos
 └── lunuxos.sh
 ```
 # 🧑‍💻 Technologies Used
