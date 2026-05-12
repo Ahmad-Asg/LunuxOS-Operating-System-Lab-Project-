@@ -1,19 +1,15 @@
 #include "deadlock.h"
 #include "logger.h"
 
-/* ══════════════════════════════════════════════
-   deadlock_init
-   ══════════════════════════════════════════════ */
+/* deadlock_init */
 void deadlock_init(DeadlockState *ds, int procs, int res) {
     memset(ds, 0, sizeof(DeadlockState));
     ds->num_processes = procs  < MAX_PROCESSES ? procs  : MAX_PROCESSES;
     ds->num_resources = res    < MAX_RESOURCES ? res    : MAX_RESOURCES;
 }
 
-/* ══════════════════════════════════════════════
-   deadlock_detect  –  Banker's safety algorithm
-   Returns 1 if deadlock (unsafe state) detected
-   ══════════════════════════════════════════════ */
+/* deadlock_detect  –  Banker's safety algorithm
+   Returns 1 if deadlock (unsafe state) detected*/
 int deadlock_detect(DeadlockState *ds) {
     int  n = ds->num_processes;
     int  m = ds->num_resources;
@@ -51,9 +47,7 @@ int deadlock_detect(DeadlockState *ds) {
     return 0;
 }
 
-/* ══════════════════════════════════════════════
-   deadlock_print_state
-   ══════════════════════════════════════════════ */
+/*   deadlock_print_state*/
 void deadlock_print_state(DeadlockState *ds) {
     int n = ds->num_processes;
     int m = ds->num_resources;
@@ -85,10 +79,10 @@ void deadlock_print_state(DeadlockState *ds) {
     printf("\n");
 }
 
-/* ══════════════════════════════════════════════
+/* 
    deadlock_run_check  –  builds a state from
    the live process table and runs detection
-   ══════════════════════════════════════════════ */
+    */
 void deadlock_run_check(SystemState *sys_state) {
     printf("\n  [Deadlock] Scanning process table...\n");
 
