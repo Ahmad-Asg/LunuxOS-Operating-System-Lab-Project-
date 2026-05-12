@@ -278,19 +278,32 @@ This project demonstrates the following Operating System concepts:
 ---
 
 # ▶️ How to Run the Project
-## Step 1: Clone the Repository
+## Step 1: Update Ubuntu Packages
+
+```bash
+# Update Package Manager
+sudo apt update
+
+# Install build-essential (includes g++ and make)
+sudo apt install build-essential
+
+# Install build-essential (includes g++ and make)
+sudo apt install mpg123
+```
+
+## Step 2: Clone the Repository
 ```bash
 git clone https://github.com/Ahmad-Asg/LunuxOS-Operating-System-Lab-Project-
 ```
-## Step 2: Move into the Project Directory
+## Step 3: Move into the Project Directory
 ```bash
 cd LunuxOS
 ```
-## Step 3: Compile the Project
+## Step 4: Compile the Project
 ```bash
 make
 ```
-## Step 4: Run the Operating System
+## Step 5: Run the Operating System
 ```bash
 ./lunuxos
 ```
